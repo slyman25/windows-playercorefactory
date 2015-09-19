@@ -2,3 +2,16 @@ go to  http://ffmpeg.zeranoe.com/builds/
 click on download git ... FFmpeg 64-bit Static Versions
 unzip content where you want and rename the
 folder whith a name easy to remember
+
+go to https://github.com/slyman25/windows-playercorefactory
+download playercorefactory.xml
+go to C:\Users\sly\AppData\Roaming\Kodi\userdata
+if you dont see this folder go to folder option
+and check show hidden files, folders, and drive
+paste playercorefactory.xml in this folder
+open playercorefactory.xml and change path to match whith your computer, exit and save
+if kodi is open, close and open the program
+
+start a streaming
+press Y
+and choose one of the ffmpeg option
