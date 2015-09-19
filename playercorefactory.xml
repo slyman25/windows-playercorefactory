@@ -1,0 +1,43 @@
+ <playercorefactory>
+
+ <players>
+   <player name="ffmpegdump" type="ExternalPlayer" audio="false" video="true">
+		<filename>C:/Users/sly/Desktop/testmpv/ffmpeg/bin/ffmpeg.exe</filename>
+     <args>-i "{0}" -c:v copy -c:a copy "C:/Users/sly/Desktop/testmpv/ffmpegdump.mkv" </args>
+     <hidexbmc>true</hidexbmc>
+   </player>
+   <player name="ffmpegdump30min" type="ExternalPlayer" audio="false" video="true">
+	<filename>C:/Users/sly/Desktop/testmpvffmpeg/bin/ffmpeg.exe</filename>
+	<args>-i "{0}" -c:v copy -c:a copy -t 00:30:00 "C:/Users/sly/Desktop/testmpv/ffmpegdump30min.mkv" </args>
+	<hidexbmc>true</hidexbmc>
+   </player>
+
+
+<player name="ffmpegdump1hrs" type="ExternalPlayer" audio="false" video="true">
+<filename>C:/Users/sly/Desktop/testmpvffmpeg/bin/ffmpeg.exe</filename>
+<args>-i "{0}" -c:v copy -c:a copy -t 01:00:00 "C:/Users/sly/Desktop/testmpv/ffmpegdump1hrs.mkv" </args>
+<hidexbmc>true</hidexbmc>
+</player>
+
+<player name="ffmpegdump2hrs" type="ExternalPlayer" audio="false" video="true">
+		<filename>C:/Users/sly/Desktop/testmpvffmpeg/bin/ffmpeg.exe</filename>
+     <args>-i "{0}" -c:v copy -c:a copy -t 02:00:00 "C:/Users/sly/Desktop/testmpv/ffmpegdump2hrs.mkv" </args>
+     <hidexbmc>true</hidexbmc>
+   </player>
+   <player name="mpv-capture" type="ExternalPlayer" audio="false" video="true">
+		<filename>C:\Users\sly\Desktop\mpv.exe</filename>
+     <args>"{0}" --stream-capture=C:/Users/sly/Desktop/testmpv/mvpC.mkv</args>
+     <hidexbmc>true</hidexbmc>
+   </player>
+   <player name="vlc-save" type="ExternalPlayer" audio="false" video="true">
+		<filename>C:\Program Files (x86)\VideoLAN\VLC\vlc.exe</filename>
+     <args>"{0}" --sout=file/ts:"C:/Users/sly/Desktop/testmpv/vlcC.mkv" </args>
+     <hidexbmc>true</hidexbmc>
+   </player>
+ <rules action="overwrite">
+   <rule name="rtmp" protocols="rtmp" player="mpv.exe"></rule>
+   <rule video="true" internetstream="true" player="vlc"></rule>
+   <rule name="smb" protocols="smb" player="vlc"></rule>
+ </rules>
+ </players>
+</playercorefactory>
