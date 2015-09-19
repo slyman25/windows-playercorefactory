@@ -1,0 +1,4 @@
+go to  http://ffmpeg.zeranoe.com/builds/
+click on download git ... FFmpeg 64-bit Static Versions
+unzip content where you want and rename the
+folder whith a name easy to remember
